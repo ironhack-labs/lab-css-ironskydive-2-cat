@@ -1,39 +1,39 @@
 ![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
-# Ejercicio guiado - IronSkydive 🎨 - estilo (CSS)
+# Exercici guiat - IronSkydive 🎨 - estil (CSS)
 
 <br/>
 
-## Introducción
+## Introducció
 
-A estas alturas, te has familiarizado con las Hojas de Estilo en Cascada (CSS), y sabes cómo
+A hores d'ara, t'has familiaritzat amb les Fulles d'Estil a Cascada (CSS), i saps com
 
-- orientar elementos usando etiquetas, clases o ids,
-- trabajar con las propiedades de la fuente y el texto,
-- añadir colores al texto y al fondo.
+- orientar elements usant etiquetes, classes o ids,
+- treballar amb les propietats de la font i el text,
+- afegir colors al text i al fons.
 
-Recuerda abrir el **CodePen** que creaste al principio del ejercicio para hacer las diferentes iteraciones del mismo.
+Recorda obrir el **CodePen** que vas crear al principi de l'exercici per fer-ne les diferents iteracions.
 
-Vamos allá.
+Anem allà.
 
 <br/>
 
 ## IDs
 
-En primer lugar, vas a añadir cuatro ids, uno por cada `<section>`que hayas definido. De arriba a abajo, los ids deben ser
+En primer lloc, afegiràs quatre ids, un per cada `<section>` que hagis definit. De dalt a baix, els ids han de ser
 
 - `información general`
 - `estructura`
 - `equipo`
 - `horario`
 
-Esto nos va a ayudar a identificar las diferentes secciones. Esto también creó algo llamado [enlaces internos](http://www.yourhtmlsource.com/text/internallinks.html). ¿Qué sucede ahora si se hace clic en los enlaces`<nav>`en la parte superior de la página? ¡Se desplaza automáticamente hacia abajo a la sección! :white:
+Això ens ajudarà a identificar les diferents seccions. Això també va crear alguna cosa anomenat [enllaços interns](http://www.yourhtmlsource.com/text/internallinks.html) . Què passa ara si es fa clic als enllaços `<nav>`a la part superior de la pàgina? Es desplaça automàticament cap avall a la secció! :white_check_mark:
 
 <br/>
 
-## Configuración general para toda la página
+## Configuració general per a tota la pàgina
 
-Bien, empecemos a usar la pestaña CSS dentro de tu proyecto de CodePen. Empezaremos configurando toda la página para que utilice la siguiente regla (copie el fragmento al principio de la pestaña CSS):
+Bé, comencem a fer servir la pestanya CSS dins del teu projecte de CodePen. Començarem configurant tota la pàgina perquè utilitzi la regla següent (copieu el fragment al principi de la pestanya CSS):
 
 ```css
 html,
@@ -43,7 +43,7 @@ body {
 }
 ```
 
-Esto va a eliminar el `margin` y el `padding` de todos los elementos, o en lenguaje sencillo, los pondrá a `0`. ¿Por qué hacemos esto? Estamos haciendo esto para restablecer algunos estilos que su navegador aplica automáticamente a los elementos, conocidos como _estilos por defecto del navegador_.
+Això eliminarà el `margin` i el `padding` de tots els elements, o en llenguatge senzill, els posarà a `0` . Per què fem això? Estem fent això per restablir alguns estils que el vostre navegador aplica automàticament als elements, coneguts com a _estils per defecte del navegador_ .
 
 <br/>
 
@@ -51,37 +51,37 @@ Esto va a eliminar el `margin` y el `padding` de todos los elementos, o en lengu
 
 <br/>
 
-:thought_balloon: No te preocupes por lo que son las propiedades `margin` y `padding` ahora mismo, las discutiremos en un momento.
+:thought \_balloon: No et preocupis pel que són les propietats `margin` i `padding` ara mateix, les discutirem en un moment.
 
 <br/>
 
-## Fuente y texto
+## Font i text
 
 ### font-family
 
-Para todo el sitio web de IronSkydive, vamos a utilizar una fuente llamada `Roboto`. Puedes encontrarla en `https://fonts.google.com/`, el repositorio de Google que alberga un gran número de fuentes. Normalmente tienes que pasar por un proceso para incrustar una de estas fuentes en tu sitio, pero nosotros lo hemos simplificado para ti.
+Per a tot el lloc web d'IronSkydive, utilitzarem una font anomenada `Roboto` . Pots trobar-la a `https://fonts.google.com/` , el repositori de Google que acull un gran nombre de fonts. Normalment has de passar per un procés per incrustar una d'aquestes fonts al teu lloc, però nosaltres ho hem simplificat per a tu.
 
-Al principio de la pestaña CSS de tu CodePen, copia la siguiente línea:
+Al principi de la pestanya CSS del teu CodePen, copia la següent línia:
 
 ```css
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
 ```
 
-Todavía no pasa nada. Sólo añade una referencia a dos fuentes diferentes:
+Encara no passa res. Només afegeix una referència a dues fonts diferents:
 
-- `Roboto`, con pesos de 100, 300 y 700.
-- `Roboto Condensed`, con un peso de 700.
+- `Roboto` , amb pesos de 100, 300 i 700.
+- `Roboto Condensed` , amb un pes de 700.
 
-Usted va a utilizar ambos en su sitio web. Así que vamos a cambiar la fuente para todo el documento. Todo el documento debe tener el texto formateado de la siguiente manera:
+Vostè utilitzarà tots dos al vostre lloc web. Així que canviarem la font per a tot el document. Tot el document ha de tenir el text formatat de la següent manera:
 
-- fuente: `Roboto`.
-- tamaño: `10px`.
-- altura de línea: `3.5em`.
-- peso: `300`.
+- font: `Roboto` .
+- mida: `10px` .
+- alçada de línia: `3.5em` .
+- pes: `300` .
 
-Recuerda: podemos apuntar a los elementos sobre los que queremos aplicar algunos estilos usando la clase o el id o el _nombre de la etiqueta_.Puedes usar la etiqueta `body` y añadirle estas respectivas propiedades CSS. Una vez definida la fuente para el documento, vamos a cambiar el comportamiento de los encabezados.
+Recorda: podem apuntar als elements sobre els quals volem aplicar alguns estils usant la classe o l'id o el _nom de l'etiqueta_ .Pots fer servir l'etiqueta `body` i afegir aquestes propietats CSS respectives. Un cop definida la font per al document, canviarem el comportament de les capçaleres.
 
-Si utilizas los encabezados del 1 al 5, utiliza un _multiselector_ que los seleccionará todos. Dentro de este selector, establece la fuente como `Roboto Condensed`. Modificaremos el tamaño de los encabezados en otro selector ya que cada uno de ellos tendrá un tamaño diferente.
+Si utilitzeu les capçaleres de l'1 al 5, utilitzeu un _multiselector_ que els seleccionarà tots. Dins aquest selector, estableix la font com a `Roboto Condensed` . Modificarem la mida de les capçaleres en un altre selector ja que cadascun tindrà una mida diferent.
 
 ```css
 /* CSS multiselector example */
@@ -96,7 +96,7 @@ h6 {
 }
 ```
 
-El resultado debería ser algo así:
+El resultat hauria de ser una cosa així:
 
 <br/>
 
@@ -104,21 +104,21 @@ El resultado debería ser algo así:
 
 <br/>
 
-### Propiedades del texto
+### Propietats del text
 
-Ahora mismo todas las fuentes tienen el mismo tamaño, vamos a cambiarlo. En primer lugar, vamos a estilizar los encabezados incluyendo las siguientes propiedades:
+Ara mateix totes les fonts tenen la mateixa mida, canviarem. En primer lloc, estilitzarem les capçaleres incloent les següents propietats:
 
-| Encabezado | Propiedades                                                                                                                                                                                                      |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<h1>`     | Tamaño: `9em` <br/> Alinear: `center` <br/> Transformar: `uppercase`                                                                                                                                             |
-| `<h2>`     | Tamaño: `5em` <br/> Alinear: `center` <br/> Transformar: `uppercase`                                                                                                                                             |
-| `<h3>`     | Tamaño: `4.2em` <br/> Alinear: `center` <br/> [Altura de la línea](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height): `1em`                                                                          |
-| `<h4>`     | Tamaño: `1.5em` <br/> [Espacio entre letras](https://developer.mozilla.org/en/docs/Web/CSS/letter-spacing): `0.4px` <br/> [Altura de línea](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height): `1em` |
-| `<h5>`     | Tamaño `1.2em` <br/> [Altura de línea](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height): `1em`                                                                                                      |
+| Encapçalat | Propietats                                                   |
+| ---------- | ------------------------------------------------------------ |
+| `<h1>`     | Mida:`9em` <br/> Alinear:`center` <br/> Transformar:`uppercase` |
+| `<h2>`     | Mida:`5em` <br/> Alinear:`center` <br/> Transformar:`uppercase` |
+| `<h3>`     | Mida:`4.2em` <br/> Alinear:`center` <br/> [ Alçada de la línia](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height) :`1em` |
+| `<h4>`     | Mida:`1.5em` <br/> [ Espai entre lletres](https://developer.mozilla.org/en/docs/Web/CSS/letter-spacing) :`0.4px` <br/> [ Alçada de línia](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height) :`1em` |
+| `<h5>`     | Mida`1.2em` <br/> [ Alçada de línia](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height) :`1em` |
 
-Una vez aplicados estos estilos a las diferentes cabeceras que tenemos, `<h1>` y `<h2>` necesitan más espacio entre ellas. Vamos a añadir más espacio estableciendo la propiedad de altura de línea `<h2>` de`line-height ` a `4em`.
+Un cop aplicats aquests estils a les diferents capçaleres que tenim, `<h1>` i `<h2>`necessiten més espai entre elles. Afegirem més espai establint la propietat d'alçada de línia `<h2>`de `line-height` a `4em` .
 
-Ya has especificado todos los estilos de texto que necesitas tener en tu sitio web.
+Ja heu especificat tots els estils de text que necessiteu tenir al vostre lloc web.
 
 <br/>
 
@@ -126,27 +126,27 @@ Ya has especificado todos los estilos de texto que necesitas tener en tu sitio w
 
 <br/>
 
-Genial, ahora vamos a añadir algunos colores a nuestro sitio web.
+Genial, ara afegirem alguns colors al nostre lloc web.
 
 <br/>
 
-## Colores
+## Colors
 
 <br/>
 
-Anteriormente, usted utilizó las propiedades de texto CSS para cambiar la apariencia del sitio web, añadiendo una fuente y tamaños personalizados, dependiendo de la etiqueta. ¡Ahora es el momento de darle un poco de color!
+Anteriorment, vostè va utilitzar les propietats de text CSS per canviar l'aparença del lloc web, afegint una font i mides personalitzades, depenent de l'etiqueta. Ara és el moment de donar-li una mica de color!
 
-Cuando estás desarrollando un sitio web, es una buena práctica tener en cuenta una tabla con los diferentes colores que vas a utilizar. En este caso, la tabla es:
+Quan estàs desenvolupant un lloc web, és una bona pràctica tenir en compte una taula amb els diferents colors que utilitzaràs. En aquest cas, la taula és:
 
-| Color       | RGB            | Resultado                                                                              |
-| ----------- | -------------- | -------------------------------------------------------------------------------------- |
-| Azul        | `67, 163, 230` | <div style="background:rgb(67, 163, 230);height:20px;margin:0 auto;width:20px"></div> |
-| Azul oscuro | `25, 33, 41`   | <div style="background:rgb(25, 33, 41);height:20px;margin:0 auto;width:20px"></div> |
-| Texto       | `0, 0, 0`      | <div style="background:rgb(0, 0, 0);height:20px;margin:0 auto;width:20px"></div> |
+| Color     | RGB            | Resultat                                                     |
+| --------- | -------------- | ------------------------------------------------------------ |
+| Blau      | `67, 163, 230` | <div style="background:rgb(67, 163, 230);height:20px;margin:0 auto;width:20px"/></div> |
+| Blau fosc | `25, 33, 41`   | <div style="background:rgb(25, 33, 41);height:20px;margin:0 auto;width:20px"/></div> |
+| Text      | `0, 0, 0`      | <div style="background:rgb(0, 0, 0);height:20px;margin:0 auto;width:20px"/></div> |
 
-Esta tabla le ayudará a comunicarse con su equipo de diseño UX/UI. Cuando te digan que apliques el `dark blue` como color de fondo, sabrás inmediatamente de qué color se trata.
+Aquesta taula us ajudarà a comunicar-vos amb el vostre equip de disseny UX/UI. Quan et diguin que apliquis el `dark blue` com a color de fons, sabràs immediatament de quin color es tracta.
 
-Vamos a describir uno a uno los cambios que tienes que aplicar sobre las diferentes secciones que definimos en la primera iteración de este ejercicio. Recuerda el diseño que hemos creado:
+Descriurem un a un els canvis que has d'aplicar sobre les diferents seccions que definim a la primera iteració d'aquest exercici. Recorda el disseny que hem creat:
 
 <br/>
 
@@ -154,7 +154,7 @@ Vamos a describir uno a uno los cambios que tienes que aplicar sobre las diferen
 
 <br/>
 
-Abre CodePen en tu navegador, y ¡comencemos!
+Obre CodePen al teu navegador, i comencem!
 
 <br/>
 
@@ -162,7 +162,7 @@ Abre CodePen en tu navegador, y ¡comencemos!
 
 <br/>
 
-El objetivo final de la barra `de` navegación es el siguiente:
+L'objectiu final de la barra de navegació és el següent:
 
 <br/>
 
@@ -170,11 +170,11 @@ El objetivo final de la barra `de` navegación es el siguiente:
 
 <br/>
 
-Empecemos por añadir el color. Añade el `dark blue` como color de fondo.
+Comencem per afegir el color. Afegeix el `dark blue` com a color de fons.
 
-Es una buena práctica usar selectores de clase en lugar de usar selectores de etiquetas HTML para definir estilos. ¿Qué pasa si aplicas un estilo a la etiqueta `nav` y en el futuro la cambias a `header`? Perderías todos los estilos, y los cambiarías uno a uno en el CSS.
+És una bona pràctica utilitzar selectors de classe en lloc de fer servir selectors d'etiquetes HTML per definir estils. Què passa si apliques un estil a l'etiqueta `nav` i en el futur la canvies a `header` ? Perdries tots els estils, i els canviaries un a un al CSS.
 
-Crea un selector en tu ficha CSS llamado `.nav-bar`, y asigna el estilo descrito anteriormente. Luego, asigna la clase a la etiqueta `nav` en tu HTML.
+Crea un selector a la fitxa CSS anomenat `.nav-bar` , i assigna l'estil descrit anteriorment. Després, assigneu la classe a l'etiqueta `nav` al vostre HTML.
 
 <br/>
 
@@ -182,9 +182,9 @@ Crea un selector en tu ficha CSS llamado `.nav-bar`, y asigna el estilo descrito
 
 <br/>
 
-Ya funciona... más o menos. Tenemos que establecer el color de los enlaces en blanco y si intentas establecer la propiedad `color: white` dentro de la clase `.nav-bar`, no funcionará porque las palabras/enlaces están envueltas dentro de una etiqueta `a`.
+Ja funciona... més o menys. Hem d'establir el color dels enllaços en blanc i si intentes establir la propietat `color: white` dins de la classe `.nav-bar` , no funcionarà perquè les paraules/enllaços estan embolicades dins una etiqueta `a` .
 
-Podemos ir en la dirección de la creación de una nueva clase y adjuntar la clase a cada elemento `li` dentro de`<nav>`, o podemos ir **DRY** (Don't Repeat Yourself) y evitar la creación de una clase más, pero en lugar de eso, la referencia de los elementos que queremos orientar a través de la clase existente `.nav-bar`.
+Podem anar a la direcció de la creació d'una nova classe i adjuntar la classe a cada element `li` dins de`<nav>`, o podem anar **DRY** (Don't Repeat Yourself) i evitar la creació d'una classe més, però en lloc de això, la referència dels elements que volem orientar a través de la classe existent `.nav-bar` .
 
 ```css
 .nav-bar a {
@@ -194,7 +194,7 @@ Podemos ir en la dirección de la creación de una nueva clase y adjuntar la cla
 
 <!-- Let's create another class, called `nav-bar-item`, and -->
 
-Cambia el `color` a _blanco_, el `text-decoration` a _none_ y el `font-size` a `2em` para obtener el resultado deseado.
+Canvia el `color` a _blanc_ , el `text-decoration` a _none_ i el `font-size` a `2em` per obtenir el resultat desitjat.
 
 <br/>
 
@@ -202,11 +202,11 @@ Cambia el `color` a _blanco_, el `text-decoration` a _none_ y el `font-size` a `
 
 <br/>
 
-En las siguientes iteraciones, vas a completar el menú. Estás listo para pasar a la siguiente sección.
+A les següents iteracions, completaràs el menú. Estàs llest per passar a la secció següent.
 
 <br/>
 
-### Encabezado
+### Encapçalat
 
 <br/>
 
@@ -214,18 +214,18 @@ En las siguientes iteraciones, vas a completar el menú. Estás listo para pasar
 
 <br/>
 
-No tengas miedo. Es más fácil de lo que parece. En primer lugar, tienes que establecer la imagen de [fondo](https://developer.mozilla.org/en/docs/Web/CSS/background-image?v=control). Las propiedades de la imagen de fondo son
+No tinguis por. És més fàcil del que sembla. En primer lloc, has destablir la imatge de [fons](https://developer.mozilla.org/en/docs/Web/CSS/background-image?v=control) . Les propietats de la imatge de fons són
 
 - **url:** `https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg.`
-- **posición:** `0 0`.
-- **repetir**: `no-repeat`
-- **tamaño**: `cover`.
+- **posició:** `0 0` .
+- **repetir** : `no-repeat`
+- **mida** : `cover` .
 
-Recuerda que debes crear una clase, en este caso `header`, y asignarla a la etiqueta `header` en tu HTML para usar este estilo. Ahora, sólo hay que establecer la altura de la `header` a `650px`.
+Recorda que has de crear una classe, en aquest cas `header` , i assignar-la a l'etiqueta `header` al teu HTML per utilitzar aquest estil. Ara, només cal establir lalçada de la `header` a `650px` .
 
-El siguiente paso es cambiar el color de `h2` a blanco, y luego añadirle una sombra de [`texto`](https://developer.mozilla.org/en/docs/Web/CSS/text-shadow). La propiedad `text-shadow` debe tener como valor `#020819 8px -20px 9px`.
+El següent pas és canviar el color de `h2` a blanc, i després afegir una ombra de [`texto`](https://developer.mozilla.org/en/docs/Web/CSS/text-shadow) . La propietat `text-shadow` ha de tenir com a valor `#020819 8px -20px 9px` .
 
-Para terminar esta sección, cambie el tamaño de la fuente de la cita. Póngalo a `2.5em`. Crea una clase de `quote` para hacer eso, y añade la clase a la etiqueta `aside` en el HTML.
+Per acabar aquesta secció, canvieu la mida de la font de la cita. Poseu-lo a `2.5em` . Crea una classe de `quote` per fer això, i afegeix la classe a l'etiqueta `aside` a l'HTML.
 
 <br/>
 
@@ -233,9 +233,9 @@ Para terminar esta sección, cambie el tamaño de la fuente de la cita. Póngalo
 
 <br/>
 
-### Sección 1
+### Secció 1
 
-En una de las iteraciones anteriores, añadiste un _id_ `general-information` a esta sección. Nuestro objetivo final para esta sección es:
+En una de les iteracions anteriors, vas afegir un _id_ `general-information` a aquesta secció. El nostre objectiu final per a aquesta secció és:
 
 <br/>
 
@@ -243,45 +243,46 @@ En una de las iteraciones anteriores, añadiste un _id_ `general-information` a 
 
 <br/>
 
-Crear un selector de clase `dark-background`, que aplique las siguientes propiedades
+Crear un selector de classe `dark-background` , que apliqui les propietats següents
 
-- color de fondo: dark blue (mira la tabla al principio de esta iteración).
-- color: blanco.
+- color de fons: dark blue (vegeu la taula al principi d'aquesta iteració).
+- color: blanc.
 
-Una vez creada la clase en tu CSS, añádela a la sección. Después de aplicar la clase, puedes ver que el texto en el````es diminuto, y no está centrado. Vamos a solucionar este problema.
+Un cop creada la classe al teu CSS, afegeix-la a la secció. Després d'aplicar la classe, pots veure que el text al és diminut, i no està centrat. Solucionarem aquest problema.
 
-Primero, a cada párrafo dentro de la sección `general-information`, añade una clase de `text`.
+Primer, a cada paràgraf dins de la secció `general-information` , afegeix una classe de `text` .
 
 <!-- Then create a multiple selector, that selects all the elements with a `.text` class inside the `#general-information` element. -->
 
-Este selector debe tener las siguientes propiedades CSS:
+Aquest selector ha de tenir les següents propietats CSS:
 
-- Tamaño de la fuente: `2em`.
-- Peso de la fuente: `100`.
-- Alineación del texto: `centro`.
+- Mida de la font: `2em` .
+- Pes de la font: `100` .
+- Alineació del text: `centro` .
 
-Mucho mejor. Terminemos esta sección añadiendo algunos estilos a los enlaces. Los enlaces se verán como botones, y todos los enlaces de esta sección tendrán la misma apariencia. Esto significa que debes crear una clase que aplique las propiedades CSS necesarias a un enlace para que se parezca a un botón.
+Molt millor. Acabem aquesta secció afegint alguns estils als enllaços. Els enllaços es veuran com a botons, i tots els enllaços d'aquesta secció tindran la mateixa aparença. Això vol dir que has de crear una classe que apliqui les propietats CSS necessàries a un enllaç perquè s'assembli a un botó.
 
 <br/>
 
 :::info
 
-:bulb: **¿Por qué no usar un botón?** Consulta [esta respuesta muy concisa de StackOverflow](https://stackoverflow.com/a/25350722/4624718) para conocer una buena regla general
+:bulb : **Per què no fer servir un botó?** Consulta [aquesta resposta molt concisa de StackOverflow](https://stackoverflow.com/a/25350722/4624718) per conèixer una bona regla general
+
 :::
 
 <br/>
 
-Vamos a crear una clase `link-btn` con las siguientes propiedades:
+Crearem una classe `link-btn` amb les següents propietats:
 
-- color de fondo: azul (mira la tabla al principio de esta iteración).
-- color: blanco.
-- font-family: `Roboto Condensed`.
-- tamaño de la fuente: `2em`.
-- [Espacio entre letras](https://developer.mozilla.org/en/docs/Web/CSS/letter-spacing): `0.5px`.
-- alineación del texto: `center`.
-- text-decoration: `none`.
+- color de fons: blau (mireu la taula al principi d'aquesta iteració).
+- color: blanc.
+- font-family: `Roboto Condensed` .
+- mida de la font: `2em` .
+- [Espai entre lletres](https://developer.mozilla.org/en/docs/Web/CSS/letter-spacing) : `0.5px` .
+- alineació del text: `center` .
+- text-decoration: `none` .
 
-Añade la clase a los tres enlaces que tienes en la sección.
+Afegeix la classe als tres enllaços que tens a la secció.
 
 <br/>
 
@@ -289,26 +290,26 @@ Añade la clase a los tres enlaces que tienes en la sección.
 
 <br/>
 
-Hmm... Parece que necesitamos una manera de reordenar nuestros elementos y ponerlos en ciertas posiciones. Este será el objetivo de una de las próximas iteraciones.
+Hmm... Sembla que necessitem una manera de reordenar els nostres elements i posar-los a certes posicions. Aquest serà l'objectiu d'una de les properes iteracions.
 
-Pasemos a la siguiente sección.
+Passem a la següent secció.
 
-### Sección 2
+### Secció 2
 
-En la segunda sección, hemos añadido un id de `structure`. En esta sección, sólo hay que configurar las propiedades de tamaño de fuente y alineación.
+A la segona secció, hem afegit un id de `structure` . En aquesta secció, només cal configurar les propietats de mida de font i alineació.
 
 <!-- You will also remove the `img` width property, and set it in the CSS. -->
 
-Crea una clase `service-box` en el CSS, con las siguientes propiedades:
+Crea una classe `service-box` al CSS, amb les propietats següents:
 
-- Tamaño de la fuente: `1.7em`.
-- Alineación del texto: `center`.
+- Mida de la font: `1.7em` .
+- Alineació del text: `center` .
 
-Asigna esta clase a cada `article` dentro de la sección de `structure`.
+Assigna aquesta classe a cada `article` dins de la secció de `structure` .
 
-Ahora, crea nuevos selectores múltiples para todas las clases `img`, dentro de la clase `service-box`.
+Ara crea nous selectors múltiples per a totes les classes `img` , dins de la classe `service-box` .
 
-:+1: Spoiler: Similar a lo que ya hiciste con los enlaces en la navbar, aquí tendremos lo siguiente:
+:+1: Spoiler: Similar al que ja vas fer amb els enllaços a la navbar, aquí tindrem el següent:
 
 ```css
 .service-box img {
@@ -316,7 +317,7 @@ Ahora, crea nuevos selectores múltiples para todas las clases `img`, dentro de 
 }
 ```
 
-Añadir una propiedad dentro para establecer el ancho de estas imágenes a `125px`.
+Afegir una propietat dins per establir l'amplada d'aquestes imatges a `125px` .
 
 <br/>
 
@@ -324,15 +325,15 @@ Añadir una propiedad dentro para establecer el ancho de estas imágenes a `125p
 
 <br/>
 
-### Sección 3
+### Secció 3
 
-El objetivo más importante al escribir CSS de calidad es crear clases que podamos reutilizar. En esta sección, volvemos a tener el azul oscuro como color de fondo. Anteriormente ha creado una clase de fondo oscuro y ahora añade esta clase a la sección del equipo.
+L'objectiu més important en escriure CSS de qualitat és crear classes que es puguin reutilitzar. En aquesta secció, tornem a tenir el blau fosc com a color de fons. Anteriorment heu creat una classe de fons fosc i ara afegeix aquesta classe a la secció de l'equip.
 
-Ahora, tienes que crear dos clases diferentes - una para el texto de la sección, y otra para los nombres de los miembros del equipo. La primera clase, `section-text`, tendrá un tamaño de fuente de `1.9em`, y el texto deberá estar alineado al `centro`.
+Ara, has de crear dues classes diferents - una per al text de la secció, i una altra per als noms dels membres de lequip. La primera classe, `section-text` , tindrà una mida de font de `1.9em` , i el text haurà d'estar alineat al `centro` .
 
-Por otro lado, la clase `member-name` tendrá un tamaño de fuente de `1,`5em, con un peso de fuente de `700`. Añade la primera clase a la `p` en el HTML, y la segunda a todas las etiquetas `h4`.
+D'altra banda, la classe `member-name` tindrà una mida de font de `1,` 5em, amb un pes de font de `700` . Afegeix la primera classe a la `p` a l'HTML, i la segona a totes les etiquetes `h4` .
 
-Para evitar que las propiedades sobrescriban otras clases, crea un selector múltiple para establecer estas clases específicamente dentro del elemento id del equipo:
+Per evitar que les propietats sobrescriguin altres classes, creeu un selector múltiple per establir aquestes classes específicament dins de l'element id de l'equip:
 
 ```css
 #team .section-text {
@@ -342,9 +343,9 @@ Para evitar que las propiedades sobrescriban otras clases, crea un selector múl
 }
 ```
 
-Además, vamos a ocuparnos de las imágenes de esta sección. Como podemos ver son súper grandes. Usemos selectores múltiples para apuntar a las etiquetas `img` dentro de `#team` y establezcamos el:
+A més, ens ocuparem de les imatges d'aquesta secció. Com podem veure són súper grans. Fem servir selectors múltiples per apuntar a les etiquetes `img` dins de `#team` i establim el:
 
-- width a 250px y
+- width a 250px i
 - height a 180px.
 
 :+1: Spoiler:
@@ -361,15 +362,15 @@ Además, vamos a ocuparnos de las imágenes de esta sección. Como podemos ver s
 
 <br/>
 
-### Sección 4
+### Secció 4
 
-_Aquí no hay nada que hacer... ¡todavía!_
+_Aquí no hi ha res a fer... encara!_
 
-### Pie de página
+### Peu de pàgina
 
-De nuevo, tenemos un fondo oscuro y un texto blanco. Añade la clase de ` dark-background` a la etiqueta de `footer ` en el HTML. Crea una clase de `footer` y añádela como segunda clase en la etiqueta `<footer>`. Usa esta clase para centrar todo el texto dentro de este elemento y para establecer el tamaño de la fuente a `1.9em`.
+De nou, tenim un fons fosc i un text blanc. Afegeix la classe de `dark-background` a l'etiqueta de `footer` a l'HTML. Crea una classe de `footer` i afegeix-la com a segona classe a l'etiqueta`<footer>`. Fes servir aquesta classe per centrar tot el text dins d'aquest element i per establir la mida de la font a `1.9em` .
 
-:+1: Spoiler: Para añadir una segunda clase, tienes que hacer lo siguiente:
+:+1: Spoiler: Per afegir una segona classe, has de fer el següent:
 
 ```html
 <!-- ... -->
@@ -379,19 +380,19 @@ De nuevo, tenemos un fondo oscuro y un texto blanco. Añade la clase de ` dark-b
 </footer>
 ```
 
-Ahora, crea una nueva clase - `address`, y asígnala a la etiqueta HTML `address`. En esta clase, definir:
+Ara, creeu una nova classe - `address` , i assigneu-la a l'etiqueta HTML `address` . En aquesta classe, definir:
 
-- estilo de fuente: `normal`.
-- tamaño de la fuente: `0.8em`.
+- estil de font: `normal` .
+- mida de la font: `0.8em` .
 
-Ya casi hemos terminado. De la misma manera que hemos seleccionado todos los enlaces dentro de la barra de navegación (utilizando un enfoque de selección múltiple), aquí vamos a seleccionar todos los enlaces dentro del pie de página y sus estilos:
+Ja gairebé hem acabat. De la mateixa manera que hem seleccionat tots els enllaços dins de la barra de navegació (utilitzant un enfocament de selecció múltiple), aquí seleccionarem tots els enllaços dins del peu de pàgina i els seus estils:
 
-- color: azul (mira la tabla al principio de esta iteración).
+- color: blau (mireu la taula al principi d'aquesta iteració).
 - text-decoration: none.
 
-Asigna esta clase a cada elemento dentro de la lista que tienes en el pie de página.
+Assigna aquesta classe a cada element dins la llista que tens al peu de pàgina.
 
-:+1: Spoiler: La forma de hacerlo es la siguiente:
+:+1: Spoiler: La manera de fer-ho és la següent:
 
 ```css
 .footer a {
@@ -399,7 +400,7 @@ Asigna esta clase a cada elemento dentro de la lista que tienes en el pie de pá
 }
 ```
 
-Y uno, lo último para esta iteración es quitar los puntos de la lista que está mostrando los enlaces de las redes sociales. Usted puede apuntar a la etiqueta `ul` dentro del pie de página y establecer la propiedad `list-style` a _ninguno_. ¡Así que aquí está!
+I un, l'última per a aquesta iteració és treure els punts de la llista que està mostrant els enllaços de les xarxes socials. Vostè pot apuntar a l'etiqueta `ul` dins del peu de pàgina i establir la propietat `list-style` a _cap_ . Així que aquí és!
 
 <br/>
 
@@ -407,4 +408,4 @@ Y uno, lo último para esta iteración es quitar los puntos de la lista que est�
 
 <br/><br/>
 
-:heart: **¡Feliz codificación!**
+:heart: **Feliç codificació!**
